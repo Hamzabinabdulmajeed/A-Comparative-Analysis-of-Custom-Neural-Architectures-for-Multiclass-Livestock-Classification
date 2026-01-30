@@ -4,6 +4,14 @@ This project explores the efficacy of different deep learning paradigms—Convol
 
 ---
 
+##  Live Demo & Deployment
+
+The top-performing model (**Veterinary CRNN**) has been deployed as a real-time diagnostic tool. You can interact with the model via the web interface below:
+
+* **Hugging Face Space:** [Cattle Disease Classifier](https://huggingface.co/spaces/hamzabinabdulmajeed/Cattle-Disease-Classifier)
+
+---
+
 ## Project Overview
 
 The objective of this research is to compare three distinct architectural approaches to image classification. Each model was trained for **25 epochs** using **PyTorch** on **GPU P100** hardware to ensure consistent benchmarking.
@@ -61,7 +69,7 @@ The **CRNN** architecture emerged as the superior model, significantly outperfor
 
 * **Best Validation Accuracy:** 95.90% (Epoch 23)
 * **Final Test Accuracy:** 94.49%
-* **Analysis:** The hybrid nature of the CRNN allowed for robust feature extraction via convolutions while the recurrent layers refined the classification by treating spatial features as a sequence.
+* **Analysis:** The hybrid nature of the CRNN allowed for robust feature extraction via convolutions while the recurrent layers (Bi-LSTM) refined the classification by treating spatial features as a sequence.
 
 ### 2. Vision Transformer (ViT)
 
@@ -95,3 +103,6 @@ The **CRNN** architecture emerged as the superior model, significantly outperfor
 * **Hardware:** P100 GPU
 * **Training Duration:** 25 Epochs per model
 
+---
+
+**Would you like me to generate a specific "How to Run" section if you want people to be able to clone and run your training scripts locally?**
